@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSide {
+  width: 30%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSide-main_container {
+  height: 95%;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.leftSide figure {
+  width: 12vw;
+  height: 10vh;
+}
+
+.leftSide img {
+  width: 100%;
+  height: 100%;
+}
+
+.leftSide form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+}
+
+.loginPart {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.loginPart p {
+  font-weight: 700;
+  color: #2c2b2b;
+}
+
+.loginPart label {
+  font-size: 10px;
+  color: #716e6e;
+  font-weight: 600;
+  width: 80%;
+}
+
+.emailLabel {
+  position: absolute;
+  z-index: 2;
+  top: 48px;
+  left: 60px;
+}
+
+.passwordLabel {
+  position: absolute;
+  z-index: 2;
+  top: 115px;
+  left: 60px;
+}
+
+.loginPart input {
+  padding: 18px;
+  width: 75%;
+  border: none;
+  background-color: #e8e6e6;
+  border-radius: 5px;
+  position: relative;
+  color: #000;
+  font-weight: bold;
+}
+
+.buttons {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons button {
+  height: 30px;
+  width: 75px;
+  border: none;
+  border-radius: 5px;
+  background-color: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgFacebook {
+  background-color: #2051ff;
+}
+
+.imgFacebook img {
+  width: 20px;
+  height: 20px;
+}
+
+.imgGoogle {
+  background-color: #8a0000;
+}
+
+.imgGoogle img {
+  width: 20px;
+  height: 20px;
+}
+
+.imgApple {
+  background-color: #000000;
+}
+
+.imgApple img {
+  width: 20px;
+  height: 20px;
+}
+
+.checkBox {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.checkBox input {
+  display: none;
+}
+
+.checkBox input + label:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: #d9d9d9;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  vertical-align: middle;
+}
+
+.checkBox input:checked + label:before {
+  background-color: red;
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: center, center;
+  border: none;
+}
+
+.checkBox label {
+  font-size: 15px;
+  width: 60%;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttonGetin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35%;
+}
+
+.buttonOnchange {
+  width: 35px;
+  height: 32px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff002e;
+  background-image: url(./images/Seta\ button.png);
+  background-position: center;
+  background-size: 25px;
+  background-repeat: no-repeat;
+}
+
+.buttonOn {
+  width: 35px;
+  height: 32px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 46, 0.18);
+  background-image: url(./images/Seta\ button.png);
+  background-position: center;
+  background-size: 25px;
+  background-repeat: no-repeat;
+}
+
+.buttonGetin a {
+  color: #a6a6a6;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.buttonGetin a:hover {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.rightSide {
+  width: 68%;
+  height: 95vh;
+}
+
+.rightSide-figure_container {
+  width: 100%;
+  height: 90vh;
+  background-image: url(./images/Main\ Image.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
