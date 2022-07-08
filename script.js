@@ -4,7 +4,7 @@ const [username, password] = document.querySelectorAll("input");
 btn.classList.add("buttonOnchange");
 
 function handleChange() {
-  if (username.value && password.value.length >= 6) {
+  if (username.value && password.value.length >= 8) {
     btn.classList.remove("buttonOn");
     btn.classList.add("buttonOnchange");
     btn.style.cursor = "pointer";
